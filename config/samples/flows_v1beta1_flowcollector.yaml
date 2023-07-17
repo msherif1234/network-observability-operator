@@ -22,6 +22,9 @@ spec:
         limits:
           memory: 800Mi
       kafkaBatchSize: 10485760
+      privileged: false
+      enableTCPDrop: false
+      enableDNSTracking: false
   processor:
     port: 2055
     imagePullPolicy: IfNotPresent
